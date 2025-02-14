@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-pal"
+version = "1.0.0"
+description = "An AI-powered code automation tool for adding docstrings, comments, and more."
+authors = [{ name = "Niloy Debnath", email = "debnath.niloy1988@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "openai",
+]
+
+[project.scripts]
+code-pal = "code_pal.cli:main"
+
+[tool.setuptools]
+packages = ["code_pal"]
+
+[tool.setuptools.package-data]
+code_pal = ["*.ini"]
+
+[tool.setuptools.exclude-package-data]
+code_pal = ["tests/*"]

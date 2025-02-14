@@ -31,7 +31,7 @@ def main():
     parser.add_argument(
         "--model",
         default="gpt-4o-mini",
-        help="Specify the OpenAI model (default: gpt-4)",
+        help="Specify the OpenAI model (default: gpt-4o-mini)",
     )
     parser.add_argument(
         "--temperature",

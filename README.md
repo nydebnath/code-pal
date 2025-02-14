@@ -70,9 +70,9 @@ python -m code_pal --module sample.py --commands command.ini
 ### **4️⃣ Customize AI Settings (Optional)**
 You can specify:
 ```sh
-code-pal --module sample.py --commands command.ini --model gpt-4 --temperature 0.5
+code-pal --module sample.py --commands command.ini --model gpt-4o-mini --temperature 0.5
 ```
-- **Defaults**: `gpt-4` as model, `0.7` as temperature.
+- **Defaults**: `gpt-4o-mini` as model, `0.7` as temperature.
 - This makes **AI behavior more customizable**.
 
 ---
